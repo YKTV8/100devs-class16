@@ -31,8 +31,13 @@ else if (myAgeIs>=30) {
 //If under 25, tell them they can not rent cars affordably
 //If under 30, tell them they can not rent fancy cars affordably
 //If under over 30, tell them there is nothing left to look forward too
+const h1Holder = document.querySelector('h1')
+h1Holder.addEventListener('click', sum)
 
-
+function sum(){
+    let inputedVal = document.querySelector('#danceDanceRevolution').value;
+    console.log((inputedVal))
+}
 //--- Harder
 //On click of the h1
 //Take the value from the input
