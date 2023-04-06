@@ -44,4 +44,42 @@ function addTwoAndDivide(n1,n2,n3){
 console.log(addTwoAndDivide(3,3,4))
 
 //---Hard
-//create a function that takes in 4 numbers. Multiply the first two numbers. If the product is greater than 100 add the sum of the last two numbers and console log the value. If the product is less that 100, subtract the difference of the last two numbers and console log the value. If the product is 100, multiply the first three numbers together and alert the remainder of dividing the fourth number
+//create a function that takes in 4 numbers. Multiply the first two numbers. 
+//If the product is greater than 100 add the sum of the last two numbers and 
+//console log the value. If the product is less that 100, 
+//subtract the difference of the last two numbers and console log the value. 
+//If the product is 100, multiply the first three numbers together and alert the 
+//remainder of dividing the fourth number
+
+let firstNum = 20
+let secondNum = 15
+let thirdNum = 10
+let forthNum = 60
+
+function addItUp(firstNum, secondNum, thirdNum, forthNum){
+    const products = firstNum * secondNum;
+
+    if (products > 100) {
+        const sums = thirdNum + forthNum;
+        console.log(products + sums);
+    } else if(products < 100 ) {
+        const diff = thirdNum - forthNum;
+        console.log(products - diff);
+    }else{
+        const result = (firstNum * secondNum * thirdNum) / forthNum;
+        alert(result)
+        
+    }
+}
+console.log(addItUp(firstNum, secondNum, thirdNum, forthNum));
+
+// function allNumbersIn(firstNum, secondNum, thirdNum, forthNum){
+//     return (firstNum * secondNum)
+//     if ((firstNum * secondNum) <= 100) {
+//         (firstNum * secondNum) + thirdNum + forthNum
+//     } else {
+//         let answer1 = thirdNum - forthNum
+        
+//     }
+// }
+// console.log(allNumbersIn(60,15,10,20))
